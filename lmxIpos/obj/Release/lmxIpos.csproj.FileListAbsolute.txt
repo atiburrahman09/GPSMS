@@ -17,3 +17,10 @@ E:\Atib\Projects\Joy Data Collection\signbd\SignBd\lmxIpos\bin\Newtonsoft.Json.d
 E:\Atib\Projects\Joy Data Collection\signbd\SignBd\lmxIpos\obj\Release\lmxIpos.csprojResolveAssemblyReference.cache
 E:\Atib\Projects\Joy Data Collection\signbd\SignBd\lmxIpos\obj\Release\lmxIpos.dll
 E:\Atib\Projects\Joy Data Collection\signbd\SignBd\lmxIpos\obj\Release\lmxIpos.pdb
+E:\Atib\Projects\GP SMS\lmxIpos\bin\lmxIpos.dll.config
+E:\Atib\Projects\GP SMS\lmxIpos\bin\lmxIpos.dll
+E:\Atib\Projects\GP SMS\lmxIpos\bin\lmxIpos.pdb
+E:\Atib\Projects\GP SMS\lmxIpos\bin\Newtonsoft.Json.dll
+E:\Atib\Projects\GP SMS\lmxIpos\obj\Release\lmxIpos.csprojResolveAssemblyReference.cache
+E:\Atib\Projects\GP SMS\lmxIpos\obj\Release\lmxIpos.dll
+E:\Atib\Projects\GP SMS\lmxIpos\obj\Release\lmxIpos.pdb
