@@ -50,8 +50,8 @@
                 </div>
                 <nav class="nav-sidebar">
                     <ul>
-                        <li><a title="Dashboard" href="/Default.aspx" class="on sidebar-small tipsy-w"><span
-                            class="icon icon-dashboard"></span></a><a href="/Default.aspx" class="on sidebar-big"><span
+                        <li><a title="Dashboard" href="/UI/JoyDataList.aspx" class="on sidebar-small tipsy-w"><span
+                            class="icon icon-dashboard"></span></a><a href="/UI/JoyDataList.aspx" class="on sidebar-big"><span
                                 class="icon icon-dashboard"></span>Dashboard </a></li>
                         <%--<asp:Repeater ID="ParentLevelMenuRepeater" runat="server" OnItemDataBound="ParentLevelMenuRepeater_ItemDataBound">
                             <ItemTemplate>
@@ -161,7 +161,7 @@
                                             <!-- Menu -->
                                             <div class="menu menu-bottom-right">
                                                 <ul>
-                                                    <li><a href="/Default.aspx">
+                                                    <li><a href="/UI/JoyDataList.aspx">
                                                         <div class="menu-icon">
                                                             <i class="icon"></i>
                                                         </div>

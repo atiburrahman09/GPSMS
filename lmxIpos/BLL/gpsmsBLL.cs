@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Data;
 using System.Linq;
 using System.Web;
 using lmxIpos.DAL;
@@ -24,6 +25,25 @@ namespace lmxIpos.BLL
             catch (Exception)
             {
                 
+                throw;
+            }
+        }
+
+        internal System.Data.DataTable GetSmsList()
+        {
+            gpsmsDAL dal = new gpsmsDAL();
+            int count = 0;
+            try
+            {
+                LumexDBPlayer db = LumexDBPlayer.Start(true);
+                DataTable dt = dal.GetSmsList(db);
+                db.Stop();
+                return dt;
+
+            }
+            catch (Exception)
+            {
+
                 throw;
             }
         }

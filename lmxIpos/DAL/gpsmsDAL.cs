@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Data;
 using System.Linq;
 using System.Web;
 
@@ -21,6 +22,20 @@ namespace lmxIpos.DAL
                 throw;
             }
             return count;
+        }
+
+        internal System.Data.DataTable GetSmsList(Lumex.Tech.LumexDBPlayer db)
+        {
+            try
+            {
+                DataTable dt = db.ExecuteDataTable("SELECT [SERIAL],[IN_MSG_ID],[MOBILENO],[BODY],[ORIGIN_PORT],[CREATE_DATE]FROM [lmxGPSMS].[dbo].[INBOX]");
+                return dt;
+            }
+            catch (Exception)
+            {
+                
+                throw;
+            }
         }
     }
 }

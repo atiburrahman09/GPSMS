@@ -16,6 +16,34 @@ namespace lmxIpos.UI
             if (!IsPostBack)
             {
                // LoadJoyData();
+                GetSmsList();
+            }
+        }
+
+        private void GetSmsList()
+        {
+            gpsmsBLL bll=new gpsmsBLL();
+            try
+            {
+                DataTable dt = bll.GetSmsList();
+                smsListGridView.DataSource = dt;
+                smsListGridView.DataBind();
+
+                if (smsListGridView.Rows.Count > 0)
+                {
+                    smsListGridView.UseAccessibleHeader = true;
+                    smsListGridView.HeaderRow.TableSection = TableRowSection.TableHeader;
+                }
+                else
+                {
+                    msgbox.Visible = true; msgTitleLabel.Text = "SMS List Data Not Found!!!"; msgDetailLabel.Text = "";
+                    msgbox.Attributes.Add("class", "alert alert-warning");
+                }
+            }
+            catch (Exception)
+            {
+                
+                throw;
             }
         }
 
