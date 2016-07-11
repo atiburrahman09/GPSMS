@@ -632,6 +632,7 @@
     <Content Include="scripts\highlight.js\styles\github.css" />
     <Content Include="scripts\jGrowl\jquery.jgrowl.css" />
     <Content Include="scripts\jGrowl\jquery.jgrowl.min.js" />
+    <None Include="Properties\PublishProfiles\GPSMS.pubxml" />
     <None Include="Properties\PublishProfiles\JoyAppData.pubxml" />
     <None Include="Properties\PublishProfiles\JoyData.pubxml" />
     <None Include="scripts\jquery-1.4.4-vsdoc.js" />
