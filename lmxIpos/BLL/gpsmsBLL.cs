@@ -10,16 +10,17 @@ namespace lmxIpos.BLL
 {
     public class gpsmsBLL
     {
-        internal int SaveInbox(string IN_MSG_ID, string MOBILENO, string BODY, string ORIGIN_PORT)
+        internal DataTable SaveInbox(string IN_MSG_ID, string MOBILENO, string BODY, string ORIGIN_PORT)
         {
             gpsmsDAL dal = new gpsmsDAL();
             int count =0;
+            DataTable dt;
             try
             {
                 LumexDBPlayer db = LumexDBPlayer.Start(true);
-                count = dal.SaveInbox(IN_MSG_ID, MOBILENO, BODY, ORIGIN_PORT, db);
+                dt = dal.SaveInbox(IN_MSG_ID, MOBILENO, BODY, ORIGIN_PORT, db);
                 db.Stop();
-                return count;
+                return dt;
 
             }
             catch (Exception)
